@@ -9,6 +9,10 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/tyler-smith/go-bip39)](https://goreportcard.com/report/github.com/tyler-smith/go-bip39)
 [![Coverage Status](https://coveralls.io/repos/github/tyler-smith/go-bip39/badge.svg?branch=master)](https://coveralls.io/github/tyler-smith/go-bip39?branch=master)
 
+This fork contains additional encryption nethods to encrypt an existing mnemonic with a passport to get a new encrypted mnemonic that is worthless without the password.
+
+BIP39 standard already allows you to create a seed from a mnemonic plus password. But that means, that you can not protect a mnemonic from an existing wallet (e.g. a mnemonic without password from a Trezor) with plausibel deniability.
+
 ## Example
 
 ```go
